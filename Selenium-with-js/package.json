@@ -1,0 +1,48 @@
+{
+  "name": "selenium-mocha",
+  "version": "1.0.0",
+  "description": "Sample project to indicate how to  create end to end UI tests using Selenium using Mocha framework with futute compliant JavaScript and orchaterate nightly running of test cases on Sauce Labs with CircleCI.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --opts ./mocha.opts './src/tests/*.js'",
+    "testprod" : "mocha --opts ./mocha.opts './src/tests/*.js' --grep @NoProd --invert"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shubmittal/Selenium-Mocha.git"
+  },
+  "keywords": [
+    "Selenium",
+    "Node.js",
+    "SauceLabs",
+    "CircleCI",
+    "JavaScript",
+    "Mocha",
+    "Babel7",
+    "React",
+    "WebDriver",
+    "Chai",
+    "Page Object Model (POM)"
+  ],
+  "author": "Shubhra Mittal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shubmittal/Selenium-Mocha/issues"
+  },
+  "homepage": "https://github.com/shubmittal/Selenium-Mocha#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.5",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-transform-for-of": "^7.0.0",
+    "@babel/preset-env": "^7.1.5",
+    "@babel/register": "^7.0.0",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0",
+    "saucelabs": "^1.5.0",
+    "selenium-webdriver": "^4.0.0-alpha.1"
+  }
+}
